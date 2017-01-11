@@ -1,0 +1,11 @@
+<template>
+	<form submit.delegate="submit()">
+		<input type="text" placeholder="title" value.bind="title" />
+		<input type="text" placeholder="what is your todo?" value.bind="todo" />
+		<button type="submit">Save</button>
+		<h3 show.bind="data.showText">Saved!</h3>
+	</form>
+	<require from="../view/component"></require>
+	<viewtodo refresh.bind="data.list"></viewtodo>
+	<!-- <viewtodo></viewtodo> -->
+</template>

@@ -1,0 +1,7 @@
+<template>
+	<div repeat.for="todo of data.list">
+		<h3>${todo.title}</h3>
+		<p>${todo.todo}</p>
+		<label>Done? <input type="checkbox" checked.bind="done"></label>
+	</div>
+</template>
